@@ -6,3 +6,11 @@ pydantic==1.8.2
 starlette==0.14.2
 typing-extensions==3.10.0.2
 uvicorn==0.15.0
+
+#for databases
+sqlalchemy
+psycopg2
+
+
+#for env var
+python-dotenv
