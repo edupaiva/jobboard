@@ -9,12 +9,12 @@ class Settings:
     PROJECT_TITLE: str = "Jobboard | by Eduardo Paiva"
     PROJECT_VERSION: str = "1.1.0"
 
-    POSTBRES_USER: str = os.getenv("POSTBRES_USER")
-    POSTBRES_PASSWORD = os.getenv("POSTBRES_PASSWORD")
-    POSTBRES_SERVER: str= os.getenv("POSTBRES_SERVER", "localhost")
-    POSTBRES_PORT: str=os.getenv("POSTBRES_PORT", 5432)
-    POSTBRES_DB: str=os.getenv("POSTBRES_DB","funceme")
+    POSTGRES_USER: str = os.getenv("POSTGRES_USER")
+    POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
+    POSTGRES_SERVER: str= os.getenv("POSTGRES_SERVER", "localhost")
+    POSTGRES_PORT: str=os.getenv("POSTGRES_PORT", 5432)
+    POSTGRES_DB: str=os.getenv("POSTGRES_DB","funceme")
 
-    DATABASE_URL = f"postgresql://{POSTBRES_USER}:{POSTBRES_PASSWORD}@{POSTBRES_SERVER}:{POSTBRES_PORT}/{POSTBRES_DB}"
+    DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
 
 settings = Settings()
